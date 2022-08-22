@@ -1,0 +1,12 @@
+#names li {
+    display: inline; 
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+#names ul {
+    text-align: center;
+}
+#websiteTitle {
+    text-align: center;
+}
