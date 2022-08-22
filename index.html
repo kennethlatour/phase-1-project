@@ -6,7 +6,8 @@
         <script defer text = 'text/javascript' src="index.js"></script>
         <meta charset="utf-8"/>
     </head>
-    <body><div>
+    <body>
+<div id = "document">
 <div>
    <h1 id="websiteTitle">Margarita</h1> 
 </div>
@@ -17,21 +18,28 @@
     </ul>
 </div>
 
-<div>
-<h2 id="title"></h2>
-<img id="img" src=""/> 
-<p id="description"></p>
-<p id="directions"></p>
-<ul id="ingredients"></ul>
-<button id="like">Like</button>
+<div class="details">
+    <img id="img" src="https://thumbs.dreamstime.com/b/margarita-cocktail-sketch-drawing-icon-summer-themed-vector-illustration-138174976.jpg"/> 
+    <span>
+    <h2 id="title"> Marg </h2>
+<p id="description"> here is where the description lives</p>
+<p id="directions"> here is where trhe directions live</p>
+<ul id="ingredients"> 
+    <li>1 0z</li>
+    <lil>Tequila</lil>
+</ul>
+<div id = "btn">
+<button class = "details" id="like">Like</button>
 </div>
 
-<form>
-
-
-    
+<form id = "form" class = "details">
+        <label for="comment"> </label>
+        <input type="text" name="comment" id="new-comment" placeholder="Thoughts? But not emotions"/>
+        <input type="submit" value="Share your thoughts"/>
+        </form>
 </form>
-
+</span>
+</div>
 
 
 

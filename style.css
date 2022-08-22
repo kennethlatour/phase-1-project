@@ -1,12 +1,55 @@
+
+#document {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #names li {
     display: inline; 
     padding-right: 15px;
     padding-left: 15px;
-    text-align: center;
 }
+
 #names ul {
     text-align: center;
 }
+
 #websiteTitle {
     text-align: center;
+    font-weight:normal;
 }
+.details {
+    text-align: right;
+    margin-right: 100px;
+    display: flex;
+    align-items: middle;
+}
+#title {
+ margin-top: 200px;
+ text-align: center;
+ font-weight: normal;
+}
+#img {
+    height: 800px;
+}
+#ingredients {
+    list-style-type: none;
+    text-align: left;
+}
+#directions {
+    text-align: center;
+}
+#description {
+    text-align: center;
+}
+#btn {
+    padding-bottom: 15px;
+}
+#like {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+#form {
+    margin-left: 100px;
+}
+span {
+    padding-left: 50px ;}
