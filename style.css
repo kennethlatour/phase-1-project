@@ -15,27 +15,30 @@
 
 #websiteHeader{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
- 
-  height: 100px;
-
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
 }
 .details {
-    text-align: right;
     margin-right: 100px;
     display: flex;
-    align-items: middle;
+    text-align: center;
 }
 #title {
- margin-top: 200px;
- text-align: center;
- font-weight: normal;
+    justify-content: center;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
 }
 #img {
     height: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 #ingredients {
+    margin-top: 100px;
     list-style-type: none;
     text-align: left;
 }
@@ -47,22 +50,47 @@
 }
 #btn {
     padding-bottom: 15px;
+    margin-left: 400px;
 }
 #like {
     margin-top: 100px;
-    margin-left: 300px;
     cursor: pointer;
-}
-#form {
-    margin-left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border-width: 1px;
+    border-color: red;
 }
 span {
-    padding-left: 50px ;}
-
-#nameList li{
-cursor: pointer;
+    flex: 2;
+    width: 800px;
+   padding-left: 50px ;}
+#form {
+    padding-top: 82px;
+    padding-left: 40px; 
 }
-
+#inputButton {
+    background-color: white;
+    border-width: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: red;
+}
+#input {
+    background-color: white;
+    border-width: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+}
+#ingForm {
+    display: flex;
+    align-items: center;
+}
+   #nameList li{
+    cursor: pointer;
+}
+#inputs {
+    padding-top: 0%;
+    margin-left: 300px;
+}
 #inputButton{
     cursor: pointer;
 }
