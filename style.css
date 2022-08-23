@@ -51,9 +51,18 @@
 #like {
     margin-top: 100px;
     margin-left: 300px;
+    cursor: pointer;
 }
 #form {
     margin-left: 100px;
 }
 span {
     padding-left: 50px ;}
+
+#nameList li{
+cursor: pointer;
+}
+
+#inputButton{
+    cursor: pointer;
+}
