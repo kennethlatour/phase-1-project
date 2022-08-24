@@ -46,8 +46,8 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         ingr (drink.strIngredient3, drink.strMeasure3, three)
         ingr (drink.strIngredient4, drink.strMeasure4, four)
         ingr (drink.strIngredient5, drink.strMeasure5, five)
-        ingr (drink.strIngredient6, drink.strMeasure6, six)
-        ingr (drink.strIngredient7, drink.strMeasure7, seven)
+        ingr (drink.strMeasure6,drink.strIngredient6, six)
+        ingr (drink.strMeasure7, drink.strIngredient7, seven)
         
         inglist.append(one, two, three, four, five, six, seven)
 

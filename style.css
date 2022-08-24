@@ -40,7 +40,8 @@
 #ingredients {
     margin-top: 100px;
     list-style-type: none;
-    text-align: left;
+    text-align: justify;
+ 
 }
 #directions {
     text-align: center;
@@ -53,7 +54,7 @@
     margin-left: 400px;
 }
 #like {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
@@ -65,8 +66,8 @@ span {
     width: 800px;
    padding-left: 50px ;}
 #form {
-    padding-top: 82px;
-    padding-left: 40px; 
+    /* padding-top: 82px;
+    padding-left: 40px;  */
 }
 #inputButton {
     background-color: white;
@@ -80,10 +81,11 @@ span {
     font-family: 'Courier New', Courier, monospace;
     width: 300px;
 }
-#ingForm {
-    display: flex;
+/* #ingForm {
+    display: inline;
     align-items: center;
-}
+    text-align: center;
+} */
    #nameList li{
     cursor: pointer;
 }
