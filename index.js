@@ -15,6 +15,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
 
         li.addEventListener('click', ()=>{
             document.getElementById("ingredients").innerHTML=""
+            document.getElementById("ingredients").textContent = 'Ingredients'
             renderDrinkDetails(drink)
         })
     }
@@ -50,8 +51,26 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         ingr (drink.strMeasure7, drink.strIngredient7, seven)
         
         inglist.append(one, two, three, four, five, six, seven)
+        const btn = document.querySelector('#like')
+
+        btn.addEventListener('click', ()=> handleButton())
+
+        
 
     }
+
+    function handleButton(){
+        const btn = document.querySelector('#like')
+        if(btn.textContent=="Yummy"){
+            btn.textContent="Not Yummy";}
+        else if(btn.textContent=="Not Yummy"){
+            btn.textContent="Yummy";}
+    }
+
+
+
+
+
 
     function ingr (ing, measurement, num) {
         if (ing === null) {num.textContent = ""}
@@ -59,7 +78,18 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
             else {num.textContent = `${ing} ${measurement}`}
     }
 
-document.getElementById(like).addEventListener('click',  )
+const form = document.querySelector('#form')
+form.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    const commentLi = document.createElement('li')
+
+    commentLi.textContent = e.target.comment.value
+
+    document.querySelector('#commentHolder').append(commentLi)
+
+    e.target.reset()
 
 
-    
+})
+
+
