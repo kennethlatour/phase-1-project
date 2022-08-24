@@ -54,7 +54,7 @@
     margin-left: 400px;
 }
 #like {
-    /* margin-top: 100px; */
+    
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
@@ -65,10 +65,8 @@ span {
     flex: 2;
     width: 800px;
    padding-left: 50px ;}
-#form {
-    /* padding-top: 82px;
-    padding-left: 40px;  */
-}
+
+
 #inputButton {
     background-color: white;
     border-width: 1px;
@@ -81,11 +79,7 @@ span {
     font-family: 'Courier New', Courier, monospace;
     width: 300px;
 }
-/* #ingForm {
-    display: inline;
-    align-items: center;
-    text-align: center;
-} */
+
    #nameList li{
     cursor: pointer;
 }
@@ -100,3 +94,4 @@ span {
     list-style-type: none;
     font-family: 'Courier New', Courier, monospace;
 }
+
