@@ -59,7 +59,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
             else {num.textContent = `${ing} ${measurement}`}
     }
 
-
+document.getElementById(like).addEventListener('click',  )
 
 
     
