@@ -4,6 +4,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
        data.drinks.forEach(drink =>{renderDrinks(drink)})
        renderDrinkDetails(data.drinks[0])
     })
+    
 // Adds names to the top of the page
     function renderDrinks(drink){
         let li = document.createElement('li')
@@ -19,6 +20,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
             renderDrinkDetails(drink)
         })
     }
+
 // Renders details to page
     function renderDrinkDetails(drink){
         const title = document.querySelector('#title')
@@ -30,7 +32,6 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         directions.textContent = drink.strInstructions
 
         let inglist = document.getElementById("ingredients")
-      
         const one = document.createElement('li')
         const two = document.createElement('li')
         const three = document.createElement('li')
@@ -62,13 +63,15 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         else if(btn.textContent=="Not Yummy"){
             btn.textContent="Yummy";}
     }
+
 // Kenneth's magic function
     function ingr (ing, measurement, num) {
         if (ing === null) {num.textContent = ""}
          else if (measurement === null) {num.textContent = `${ing}`}    
             else {num.textContent = `${measurement} ${ing}`}
     }
-// Submit function
+
+// Submit form
 const form = document.querySelector('#form')
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -79,9 +82,8 @@ form.addEventListener('submit', (e)=>{
     document.querySelector('#commentHolder').append(commentLi)
 
     e.target.reset()
-
-
 })
+
 // Spicy Surprise
 document.addEventListener('keydown', (e)=>{
    let key = e.key
@@ -89,10 +91,3 @@ document.addEventListener('keydown', (e)=>{
         document.querySelector('#document').innerHTML = "<h1 id = 'drunk'>GO HOME YOU'RE DRUNK</h1>"
     }
 })
-
-
-
-
-
-
-

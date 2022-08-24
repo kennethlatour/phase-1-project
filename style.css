@@ -2,6 +2,7 @@
 #document {
     font-family: 'Courier New', Courier, monospace;
 }
+
 #drunk {
     font-family: 'Courier New', Courier, monospace;
     color: red;
@@ -26,11 +27,13 @@
     margin-right: auto;
     height: 100px;
 }
+
 .details {
     margin-right: 100px;
     display: flex;
     text-align: center;
 }
+
 #title {
     justify-content: center;
     margin-top: 200px;
@@ -39,40 +42,44 @@
     font-weight: normal;
     width: 100%;
 }
+
 #img {
     height: 800px;
     margin-top: 50px;
     margin-left: 50px;
 }
+
 #ingredients {
     margin-top: 100px;
     list-style-type: none;
     text-align: justify;
- 
-}
+ }
+
 #directions {
     text-align: center;
 }
+
 #description {
     text-align: center;
 }
+
 #btn {
     padding-bottom: 15px;
     margin-left: 400px;
 }
 #like {
-    
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
     border-width: 1px;
     border-color: red;
 }
+
 span {
     flex: 2;
     width: 800px;
-   padding-left: 50px ;}
-
+   padding-left: 50px ;
+}
 
 #inputButton {
     background-color: white;
@@ -80,6 +87,7 @@ span {
     font-family: 'Courier New', Courier, monospace;
     border-color: red;
 }
+
 #input {
     background-color: white;
     border-width: 1px;
@@ -90,13 +98,16 @@ span {
    #nameList li{
     cursor: pointer;
 }
+
 #inputs {
     padding-top: 0%;
     margin-left: 300px;
 }
+
 #inputButton{
     cursor: pointer;
 }
+
 #commentHolder {
     list-style-type: none;
     font-family: 'Courier New', Courier, monospace;
