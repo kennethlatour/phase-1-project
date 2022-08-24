@@ -45,8 +45,8 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         ingr (drink.strIngredient3, drink.strMeasure3, three)
         ingr (drink.strIngredient4, drink.strMeasure4, four)
         ingr (drink.strIngredient5, drink.strMeasure5, five)
-        ingr (drink.strMeasure6,drink.strIngredient6, six)
-        ingr (drink.strMeasure7, drink.strIngredient7, seven)
+        ingr (drink.strIngredient6, drink.strMeasure6, six)
+        ingr (drink.strIngredient7, drink.strMeasure7, seven)
         
         inglist.append(one, two, three, four, five, six, seven)
         const btn = document.querySelector('#like')
@@ -66,7 +66,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
     function ingr (ing, measurement, num) {
         if (ing === null) {num.textContent = ""}
          else if (measurement === null) {num.textContent = `${ing}`}    
-            else {num.textContent = `${ing} ${measurement}`}
+            else {num.textContent = `${measurement} ${ing}`}
     }
 // Submit function
 const form = document.querySelector('#form')
