@@ -2,6 +2,13 @@
 #document {
     font-family: 'Courier New', Courier, monospace;
 }
+#drunk {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-weight: normal;
+    text-align: center;
+    font-size: 500px;
+}
 
 #names li {
     display: inline; 

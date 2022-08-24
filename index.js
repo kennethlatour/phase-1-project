@@ -85,8 +85,8 @@ form.addEventListener('submit', (e)=>{
 // Spicy Surprise
 document.addEventListener('keydown', (e)=>{
    let key = e.key
-    if (key === 'ArrowLeft'){
-        document.querySelector('#document').innerHTML = "GO HOME YOU'RE DRUNK!!!!!"
+    if (key === 'ArrowDown'){
+        document.querySelector('#document').innerHTML = "<h1 id = 'drunk'>GO HOME YOU'RE DRUNK</h1>"
     }
 })
 
