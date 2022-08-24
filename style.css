@@ -96,3 +96,7 @@ span {
 #inputButton{
     cursor: pointer;
 }
+#commentHolder {
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+}
