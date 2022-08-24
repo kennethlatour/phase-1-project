@@ -1,10 +1,10 @@
 fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
     .then(resp => resp.json())
-    .then(data =>{
-       data.drinks.forEach(drink =>{renderDrinks(drink)})
+    .then(data =>{data.drinks.forEach(drink =>{renderDrinks(drink)})
        renderDrinkDetails(data.drinks[0])
-    })
-    
+})
+  
+
 // Adds names to the top of the page
     function renderDrinks(drink){
         let li = document.createElement('li')
@@ -13,10 +13,12 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         li.textContent = drink.strDrink
 
         list.append(li)
+
 //click event to render drink details to page
         li.addEventListener('click', ()=>{
             document.getElementById("ingredients").innerHTML=""
             document.getElementById("ingredients").textContent = 'Ingredients'
+            document.querySelector('#like').textContent = 'Not Yummy'
             renderDrinkDetails(drink)
         })
     }
@@ -50,18 +52,16 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         ingr (drink.strIngredient7, drink.strMeasure7, seven)
         
         inglist.append(one, two, three, four, five, six, seven)
-        const btn = document.querySelector('#like')
-
-        btn.addEventListener('click', ()=> handleButton())
     }
-
-//Handles the like button
+    
+    //Handles the like button
+    const btn = document.querySelector('#like')
+    btn.addEventListener('click', ()=>handleButton())
     function handleButton(){
-        const btn = document.querySelector('#like')
-        if(btn.textContent=="Yummy"){
-            btn.textContent="Not Yummy";}
-        else if(btn.textContent=="Not Yummy"){
-            btn.textContent="Yummy";}
+        if(btn.textContent === "Yummy"){
+            btn.textContent = "Not Yummy";}
+        else if(btn.textContent === "Not Yummy"){
+            btn.textContent = "Yummy";}
     }
 
 // Kenneth's magic function
@@ -76,11 +76,8 @@ const form = document.querySelector('#form')
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
     const commentLi = document.createElement('li')
-
     commentLi.textContent = e.target.comment.value
-
     document.querySelector('#commentHolder').append(commentLi)
-
     e.target.reset()
 })
 
