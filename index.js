@@ -52,6 +52,10 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         ingr (drink.strIngredient7, drink.strMeasure7, seven)
         
         inglist.append(one, two, three, four, five, six, seven)
+
+        document.querySelector('#commentHolder').innerHTML = ''
+
+
     }
     
     //Handles the like button
@@ -71,15 +75,15 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
             else {num.textContent = `${measurement} ${ing}`}
     }
 
-// Submit form
 const form = document.querySelector('#form')
 form.addEventListener('submit', (e)=>{
-    e.preventDefault()
-    const commentLi = document.createElement('li')
-    commentLi.textContent = e.target.comment.value
-    document.querySelector('#commentHolder').append(commentLi)
-    e.target.reset()
+ e.preventDefault()
+ const commentLi = document.createElement('li')
+ commentLi.textContent = e.target.comment.value
+ document.querySelector('#commentHolder').append(commentLi)
+ e.target.reset()
 })
+
 
 // Spicy Surprise
 document.addEventListener('keydown', (e)=>{
